@@ -1,0 +1,38 @@
+
+$dark: #2a2a2a;
+$grey: #A7A7A7;
+$light: #FCFCFC;
+$brown: #895631;
+$librown: #DB883A;
+
+
+@mixin rf400 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+@mixin rf500 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+@mixin rf700 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+@mixin raf400 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+@mixin raf600 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+@mixin raf700 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+

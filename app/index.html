@@ -1,20 +1,518 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Le-Artch</title>
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#ffffff">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
-    
 
-    <div class="box"></div>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__top-inner">
+                <a class="header-logo" href="#">
+                    <img class="logo" src="images/Logo.png" alt="">
+                </a>
+                <a class="header-phone header__top-link" href="tel:78855896985">
+                    +7 (885) 589 69 85
+                </a>
+                <a class="header-email header__top-link" href="#">
+                    archi@info.com
+                </a>
+                <a class="header-adres header__top-link" href="#">
+                    Litačka, Nové Město, Чешская Республика
+                </a>
+                <div class="header-menu__btn">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="header__menu">
+                    <div class="header__menu-top">
+                        <a class="header-logo" href="#">
+                            <img class="logo" src="images/Logo-black.png" alt="">
+                        </a>
+                        <div class="header__top-box">
+                            <div class="header-language">
+                                <a href="#">en</a> /
+                                <a href="#">ru</a>
+                            </div>
+                            <a class="header-cart" href="#" data-title="Корзина">
+                                <svg width="21" height="23" viewBox="0 0 21 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="1" y="7" width="19" height="15" stroke="black" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M6 7V5.5C6 3.01472 8.01472 1 10.5 1C12.9853 1 15 3.01472 15 5.5V7"
+                                        stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <div class="menu-btn__close">
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">Главная</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">Страницы</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">Проекты</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">Магазин</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__menu-info">
+                        <div class="header__menu-social">
+                            <div class="header__social-box">
+                                <a class="facebook" href="#">
+                                    fb
+                                </a>
+                                <a class="instagram" href="#">
+                                    ig
+                                </a>
+                                <a class="twitter" href="#">
+                                    tw
+                                </a>
+                            </div>
+                            <div class="header__copy">
+                                © 2020 <a href="#">Le-Artch</a> Все права защищены.
+                            </div>
+                        </div>
+                        <div class="header__menu-infos" style="background-image: url('images/infos-bg.jpg');">
+                            <div class="header__infos-wrapper">
+                                <div class="header__infos-box">
+                                    <div class="infos-phone infos-content">
+                                        <span>Телефон</span>
+                                        <a class="header-phone" href="tel:78855896985">
+                                            +7 (885) 589 69 85
+                                        </a>
+                                    </div>
+                                    <div class="infos-email infos-content">
+                                        <span>Email</span>
+                                        <a class="header-email" href="#">
+                                            archi@info.com
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="header__infos-box">
+                                    <div class="infos-office infos-content">
+                                        <span>Главный офис</span>
+                                        <a href="#">
+                                            Litačka, Nové Město, Чешская Республика
+                                        </a>
+                                    </div>
+                                    <div class="infos-room infos-content">
+                                        <span>Выставочный зал</span>
+                                        <a href="#">
+                                            Via Archimede, 620129 Милан Италия
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="top-slider">
+        <div class="container">
+            <div class="top-slider__inner">
+                <div class="top-slider__item">
+                    <img src="images/slider-big-1.jpg" alt="">
+                    <div class="top-slider__content">
+                        <h1 class="top-slider__title">
+                            Современная жизнь в лесу
+                        </h1>
+                        <a class="top-slider__link" href="#">
+                            Посмотреть проект
+                        </a>
+                    </div>
+                </div>
+                <div class="top-slider__item">
+                    <img src="images/slider-big-2.jpg" alt="">
+                    <div class="top-slider__content">
+                        <h1 class="top-slider__title">
+                            Мега эко дом
+                        </h1>
+                        <a class="top-slider__link" href="#">
+                            Посмотреть проект
+                        </a>
+                    </div>
+                </div>
+                <div class="top-slider__item">
+                    <img src="images/slider-big-3.jpg" alt="">
+                    <div class="top-slider__content">
+                        <h1 class="top-slider__title">
+                            Деревянный дом в сосновом лесу
+                        </h1>
+                        <a class="top-slider__link" href="#">
+                            Посмотреть проект
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ourstory" style="background-image: url('images/story-bg.jpg');">
+        <div class="container">
+            <div class="ourstory__inner">
+                <div class="ourstory__images">
+                    <img class="ourstory__img" src="images/story-Img.jpg" alt="">
+                    <div class="ourstory__content">
+                        <div class="ourstory__content-box">
+                            <div class="ourstory__content-title">
+                                Muraflex превращает планы этажей в архитектурные пространства. С европейским оттенком.
+                            </div>
+                            <div class="ourstory__content-text">
+                                Muraflex превращает планы этажей в архитектурные пространства. С европейским акцентом,
+                                наш опыт в
+                                дизайне. Muraflex превращает планы этажей в архитектурные пространства. С европейским
+                                оттенком и
+                                нашим дизайнерским чутьем.
+                            </div>
+                            <a href="#" class="ourstory__content-link">
+                                Больше о нас
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ourstory__title-box">
+                    <h3 class="outstory__title">
+                        Наша История
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ourservices">
+        <div class="container">
+            <div class="ourservices__inner">
+                <div class="ourservices__items">
+                    <div class="ourservices__item">
+                        <div class="ourservices__images">
+                            <img class="ourservices__img" src="images/services-img-1.jpg" alt="">
+                        </div>
+                        <div class="ourservices__content">
+                            <div class="ourservices__box">
+                                <div class="ourservices__title">
+                                    Архитектура
+                                </div>
+                                <div class="ourservices__text">
+                                    Muraflex превращает планы этажей в архитектурные пространства.
+                                </div>
+                                <a href="#" class="ourservices__link">
+                                    БОЛЬШЕ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ourservices__item ourservices__item-order">
+                        <div class="ourservices__images">
+                            <img class="ourservices__img" src="images/services-img-2.jpg" alt="">
+                        </div>
+                        <div class="ourservices__content">
+                            <div class="ourservices__box">
+                                <div class="ourservices__title">
+                                    ДИЗАЙН ИНТЕРЬЕРА
+                                </div>
+                                <div class="ourservices__text">
+                                    Muraflex превращает планы этажей в архитектурные пространства.
+                                </div>
+                                <a href="#" class="ourservices__link">
+                                    БОЛЬШЕ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ourservices__item">
+                        <div class="ourservices__images">
+                            <img class="ourservices__img" src="images/services-img-3.jpg" alt="">
+                        </div>
+                        <div class="ourservices__content">
+                            <div class="ourservices__box">
+                                <div class="ourservices__title">
+                                    ПЕЙЗАЖ
+                                </div>
+                                <div class="ourservices__text">
+                                    Muraflex превращает планы этажей в архитектурные пространства.
+                                </div>
+                                <a href="#" class="ourservices__link">
+                                    БОЛЬШЕ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ourstory__title-box">
+                    <h3 class="outstory__title">
+                        Наши Услуги
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews" style="background-image: url('images/story-bg.jpg');">
+        <div class="container">
+            <div class="reviews__inner">
+                <div class="reviews__slider">
+                    <div class="reviews__item">
+                        <div class="reviews__text">
+                            Разнообразный и богатый опыт сложившаяся структура организации требуют определения и
+                            уточнения направлений прогрессивного развития.
+                        </div>
+                        <div class="reviews__customer">
+                            Джон Доу / Заказчик
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__text">
+                            Разнообразный и богатый опыт сложившаяся структура организации требуют определения и
+                            уточнения направлений прогрессивного развития. модернизации систем массового участия.
+                        </div>
+                        <div class="reviews__customer">
+                            Джони Доуc / Заказчик
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__text">
+                            Разнообразный и богатый опыт сложившаяся структура организации требуют определения и
+                            уточнения направлений прогрессивного развития. Влечет за собой процесс внедрения и
+                            модернизации систем массового участия.
+                        </div>
+                        <div class="reviews__customer">
+                            Джонc Доур / Заказчик
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__text">
+                            Разнообразный и богатый опыт сложившаяся структура организации требуют определения и
+                            уточнения направлений прогрессивного развития. С другой стороны постоянное
+                            информационно-пропагандистское обеспечениею
+                        </div>
+                        <div class="reviews__customer">
+                            Джонатан Доу / Заказчик
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews__brand">
+                <img class="brand-img" src="images/brand-1.png" alt="">
+                <img class="brand-img" src="images/brand-2.png" alt="">
+                <img class="brand-img" src="images/brand-3.png" alt="">
+                <img class="brand-img" src="images/brand-4.png" alt="">
+                <img class="brand-img" src="images/brand-5.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="ourprojects">
+        <div class="container">
+            <div class="ourprojects__inner">
+                <div class="slides-numbers">
+                    1 | 6
+                </div>
+                <div class="ourprojects__slider">
+                    <div class="ourprojects__item">
+                        <div class="ourprojects__images">
+                            <a href="#">
+                                <img class="ourprojects__img" src="images/project-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="ourprojects__category">
+                            2020 - Архитектура
+                        </div>
+                        <a href="#" class="ourprojects__name">
+                            Элегантный роскошный дом
+                        </a>
+                    </div>
+                    <div class="ourprojects__item">
+                        <div class="ourprojects__images">
+                            <a href="#">
+                                <img class="ourprojects__img" src="images/project-2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="ourprojects__category">
+                            2020 - Интерьер
+                        </div>
+                        <a href="#" class="ourprojects__name">
+                            Мега экологичный дом
+                        </a>
+                    </div>
+                    <div class="ourprojects__item">
+                        <div class="ourprojects__images">
+                            <a href="#">
+                                <img class="ourprojects__img" src="images/project-3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="ourprojects__category">
+                            2020 - Архитектура
+                        </div>
+                        <a href="#" class="ourprojects__name">
+                            Элегантный роскошный дом
+                        </a>
+                    </div>
+                    <div class="ourprojects__item">
+                        <div class="ourprojects__images">
+                            <a href="#">
+                                <img class="ourprojects__img" src="images/project-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="ourprojects__category">
+                            2020 - Архитектура
+                        </div>
+                        <a href="#" class="ourprojects__name">
+                            Элегантный роскошный дом
+                        </a>
+                    </div>
+                    <div class="ourprojects__item">
+                        <div class="ourprojects__images">
+                            <a href="#">
+                                <img class="ourprojects__img" src="images/project-2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="ourprojects__category">
+                            2020 - Интерьер
+                        </div>
+                        <a href="#" class="ourprojects__name">
+                            Мега экологичный дом
+                        </a>
+                    </div>
+                    <div class="ourprojects__item">
+                        <div class="ourprojects__images">
+                            <a href="#">
+                                <img class="ourprojects__img" src="images/project-3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="ourprojects__category">
+                            2020 - Архитектура
+                        </div>
+                        <a href="#" class="ourprojects__name">
+                            Элегантный роскошный дом
+                        </a>
+                    </div>
+                </div>
+                <div class="ourstory__title-box">
+                    <h3 class="outstory__title">
+                        Наши Проекты
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-top" style="background-image: url('images/story-bg.jpg');">
+            <div class="container">
+                <div class="footer-top__inner">
+                    <div class="footer-top__box">
+                        <h3 class="footer-top__title">
+                            У Вас есть проект?
+                        </h3>
+                        <div class="footer-top__text">
+                            Оставьте свой адрес электронной почты и мы свяжемся с вами в ближайшее время
+                        </div>
+                    </div>
+                    <div class="footer-top__form">
+                        <form>
+                            <input type="text" placeholder="Ваш email">
+                            <button type="submit">послать</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-bottom__inner">
+                <div class="footer-bottom__navigation">
+                    <nav class="footer-menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">Главная</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">Страницы</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">Проекты</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">Магазин</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer__copy">
+                        <a class="footer-logo" href="#">
+                            <img src="images/Logo-black.png" alt="">
+                        </a>
+                        <div class="footer__copy-text">
+                            © 2019 <a href="#">Le-Artch</a>. Все права защищены
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom__info">
+                    <a class="footer-phone" href="tel:78855896985">
+                        +7 (885) 589 69 85
+                    </a>
+                    <a class="footer-email" href="#">
+                        archi@info.com
+                    </a>
+                    <a class="footer-adres" href="#">
+                        Litačka, Nové Město, Чешская Республика
+                    </a>
+                    <div class="footer__social-box">
+                        <a class="facebook" href="#">
+                            fb
+                        </a>
+                        <a class="instagram" href="#">
+                            ig
+                        </a>
+                        <a class="twitter" href="#">
+                            tw
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
