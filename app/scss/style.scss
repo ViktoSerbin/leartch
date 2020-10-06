@@ -51,6 +51,19 @@
     }
 }
 
+.header-page {
+    .header-menu__btn {
+        div {
+            background-color: #3a3a3a;
+        }
+    }
+    .header__top-link {
+        &:hover {
+            color: #3a3a3a;
+        }
+    }
+}
+
 .menu-btn__close {
     display: flex;
     flex-direction: column;
@@ -150,6 +163,8 @@
     margin-left: 75px;
     .menu__list-item {
         padding: 8px 0px 8px 0px;
+        max-width: 300px;
+        width: 100%;
     }
     .menu__list-link {
         @include raf700;
@@ -160,6 +175,45 @@
             color: $brown;
             transform: scale(1.2);
             margin-left: 37px;
+        }
+    }
+}
+
+.menu__list-drop {
+    position: relative;
+    &:hover {
+        .menu-drop__box {
+            height: auto;
+            overflow: auto;
+            padding: 10px;
+            transition: all 0.5s;
+        }
+    }
+}
+
+.menu-drop__box {
+    background-image: url("../images/story-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    max-width: 200px;
+    width: 100%;
+    padding: 0;
+    position: absolute;
+    left: 180px;
+    top: 0;
+    overflow: hidden;
+    height: 0;
+    .menu-drop-item {
+        padding: 8px 0px 8px 0px;
+    }
+    .menu-drop__link {
+        @include raf700;
+        font-size: 20px;
+        line-height: 24px;
+        transition: all 0.3s;
+        &:hover {
+            color: $brown;
         }
     }
 }
@@ -844,7 +898,7 @@
                 letter-spacing: 0.5px;
                 text-transform: uppercase;
                 color: #2a2a2a;
-                transition: all .5s;
+                transition: all 0.5s;
                 & + a {
                     margin-left: 60px;
                 }
@@ -856,3 +910,9 @@
         }
     }
 }
+
+// start shop-page
+
+
+
+// end shop-page

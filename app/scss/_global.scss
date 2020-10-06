@@ -46,7 +46,10 @@ p {
 body {
     @include rf400;
     font-size: 16px;
-    
+}
+
+form {
+    margin: 0;
 }
 
 .container {
@@ -56,3 +59,39 @@ body {
     padding: 0 15px;
 }
 
+.section-info {
+    text-align: center;
+    margin-top: 130px;
+    padding: 140px 0px 120px 0px;
+    .section-info__title {
+        @include raf700;
+        font-size: 48px;
+        letter-spacing: 2px;
+        color: #2a2a2a;
+        margin-bottom: 40px;
+    }
+    .breadcrumbs__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+            display: inline-block;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            color: $brown;
+        }
+        li + li {
+            margin-left: 35px;
+        }
+        div {
+            width: 4px;
+            height: 4px;
+            background-color: $brown;
+            border-radius: 50%;
+            margin: 0px 16px 0px 16px;
+        }
+        span {
+            opacity: 0.4;
+        }
+    }
+}

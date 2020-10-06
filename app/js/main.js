@@ -40,5 +40,7 @@ $(function () {
         $('.slides-numbers').text(currentSlide + 1 + ' | ' + slick.slideCount);
     });
 
+    $('select, input').styler();
+
 
 });
