@@ -203,15 +203,276 @@
                     </div>
                     <div class="sort-selectbox">
                         <select>
-                            <option>Лучшие продажи</option>
-                            <option>По дате</option>
-                            <option>Новинки</option>
+                            <option data-filter=".category-b">Лучшие продажи</option>
+                            <option data-filter=".category-a">По дате</option>
+                            <option data-filter="all">Новинки</option>
                         </select>
                     </div>
                 </div>
             </div>
             <div class="product-page__inner">
-                
+                <aside class="product-page__aside">
+                    <div class="price aside__item">
+                        <div class="aside__title">
+                            ЦЕНА
+                        </div>
+                        <form>
+                            <input type="text" class="js-range-slider" name="my_range" value="" />
+                        </form>
+                    </div>
+                    <div class="categories aside__item">
+                        <div class="aside__title">
+                            Категории
+                        </div>
+                        <ul class="categories__list">
+                            <li>
+                                <a href="#">Квартира</a>
+                            </li>
+                            <li>
+                                <a href="#">Декор</a>
+                            </li>
+                            <li>
+                                <a href="#">Интерьер</a>
+                            </li>
+                            <li>
+                                <a href="#">Мебель</a>
+                            </li>
+                            <li>
+                                <a href="#">Дом</a>
+                            </li>
+                            <li>
+                                <a href="#">Дерево</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="color aside__item">
+                        <div class="aside__title">
+                            цвет
+                        </div>
+                        <div class="color-wrapper">
+                            <div class="checkbox__color">
+                                <input type="checkbox">
+                                <div class="circle-color circle__color-black"></div>
+                                <label>
+                                    Черный
+                                </label>
+                            </div>
+                            <div class="checkbox__color">
+                                <input type="checkbox">
+                                <div class="circle-color circle__color-blue"></div>
+                                <label>
+                                    Синий Роял
+                                </label>
+                            </div>
+                            <div class="checkbox__color">
+                                <input type="checkbox">
+                                <div class="circle-color circle__color-brown"></div>
+                                <label>
+                                    Коричневый
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="material aside__item">
+                        <div class="aside__title">
+                            МАТЕРИАЛ
+                        </div>
+                        <div class="color-wrapper">
+                            <div class="checkbox__color checkbox__material">
+                                <input type="checkbox">
+                                <label>
+                                    Натуральная кожа
+                                </label>
+                            </div>
+                            <div class="checkbox__color checkbox__material">
+                                <input type="checkbox">
+                                <label>
+                                    Дерево
+                                </label>
+                            </div>
+                            <div class="checkbox__color checkbox__material">
+                                <input type="checkbox">
+                                <label>
+                                    Металл
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tags aside__item">
+                        <div class="aside__title">
+                            МАТЕРИАЛ
+                        </div>
+                        <div class="tags-box">
+                            <a class="tags-box__link" href="#">Коричневый</a>
+                            <a class="tags-box__link" href="#">Современный</a>
+                            <a class="tags-box__link" href="#">Стул</a>
+                            <a class="tags-box__link" href="#">Лучшие продажи</a>
+                        </div>
+                    </div>
+                </aside>
+                <div class="product-page__content">
+                    <div class="product-page__items">
+                        <div class="product__item mix category-a" data-order="1">
+                            <a href="#" class="product__item-images">
+                                <img class="product__item-img" src="images/shop/product-img-1.jpg" alt="">
+                            </a>
+                            <div class="product__item-content">
+                                <a href="#" class="product__item-name">
+                                    Stocksund
+                                </a>
+                                <div class="product__item-price">
+                                    <span>$385</span>$200
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item mix category-b" data-order="2">
+                            <a href="#" class="product__item-images">
+                                <img class="product__item-img" src="images/shop/product-img-2.jpg" alt="">
+                            </a>
+                            <div class="product__item-content">
+                                <a href="#" class="product__item-name">
+                                    Stocksund
+                                </a>
+                                <div class="product__item-price">
+                                    <span></span>$200
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item mix category-a" data-order="3">
+                            <a href="#" class="product__item-images">
+                                <img class="product__item-img" src="images/shop/product-img-3.jpg" alt="">
+                            </a>
+                            <div class="product__item-content">
+                                <a href="#" class="product__item-name">
+                                    Kragstar
+                                </a>
+                                <div class="product__item-price">
+                                    <span></span>$200
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item mix category-b" data-order="4">
+                            <a href="#" class="product__item-images">
+                                <img class="product__item-img" src="images/shop/product-img-4.jpg" alt="">
+                            </a>
+                            <div class="product__item-content">
+                                <a href="#" class="product__item-name">
+                                    Lunnarp
+                                </a>
+                                <div class="product__item-price">
+                                    <span>$385</span>$200
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item mix category-a" data-order="5">
+                            <a href="#" class="product__item-images">
+                                <img class="product__item-img" src="images/shop/product-img-5.jpg" alt="">
+                            </a>
+                            <div class="product__item-content">
+                                <a href="#" class="product__item-name">
+                                    Vejmon
+                                </a>
+                                <div class="product__item-price">
+                                    <span></span>$200
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item mix category-b" data-order="6">
+                            <a href="#" class="product__item-images">
+                                <img class="product__item-img" src="images/shop/product-img-6.jpg" alt="">
+                            </a>
+                            <div class="product__item-content">
+                                <a href="#" class="product__item-name">
+                                    Niboda
+                                </a>
+                                <div class="product__item-price">
+                                    <span></span>$200
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item mix category-a" data-order="7">
+                            <a href="#" class="product__item-images">
+                                <img class="product__item-img" src="images/shop/product-img-7.jpg" alt="">
+                            </a>
+                            <div class="product__item-content">
+                                <a href="#" class="product__item-name">
+                                    Lustigt
+                                </a>
+                                <div class="product__item-price">
+                                    <span>$385</span>$200
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item mix" data-order="8">
+                            <a href="#" class="product__item-images">
+                                <img class="product__item-img" src="images/shop/product-img-8.jpg" alt="">
+                            </a>
+                            <div class="product__item-content">
+                                <a href="#" class="product__item-name">
+                                    Besta
+                                </a>
+                                <div class="product__item-price">
+                                    <span></span>$200
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item mix category-a" data-order="9">
+                            <a href="#" class="product__item-images">
+                                <img class="product__item-img" src="images/shop/product-img-9.jpg" alt="">
+                            </a>
+                            <div class="product__item-content">
+                                <a href="#" class="product__item-name">
+                                    Strandmon
+                                </a>
+                                <div class="product__item-price">
+                                    <span></span>$200
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item mix category-a" data-order="10">
+                            <a href="#" class="product__item-images">
+                                <img class="product__item-img" src="images/shop/product-img-10.jpg" alt="">
+                            </a>
+                            <div class="product__item-content">
+                                <a href="#" class="product__item-name">
+                                    Stockholm
+                                </a>
+                                <div class="product__item-price">
+                                    <span>$385</span>$200
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item mix category-a" data-order="11">
+                            <a href="#" class="product__item-images">
+                                <img class="product__item-img" src="images/shop/product-img-11.jpg" alt="">
+                            </a>
+                            <div class="product__item-content">
+                                <a href="#" class="product__item-name">
+                                    Rort
+                                </a>
+                                <div class="product__item-price">
+                                    <span></span>$200
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item mix category-a" data-order="12">
+                            <a href="#" class="product__item-images">
+                                <img class="product__item-img" src="images/shop/product-img-12.jpg" alt="">
+                            </a>
+                            <div class="product__item-content">
+                                <a href="#" class="product__item-name">
+                                    Industriell
+                                </a>
+                                <div class="product__item-price">
+                                    <span></span>$200
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__link-box">
+                        <a class="product__items-link" href="#">СМОТРЕТЬ БОЛЬШЕ</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

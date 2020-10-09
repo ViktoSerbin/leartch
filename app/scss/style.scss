@@ -52,6 +52,7 @@
 }
 
 .header-page {
+    border-bottom: 1px solid #eee;
     .header-menu__btn {
         div {
             background-color: #3a3a3a;
@@ -913,6 +914,327 @@
 
 // start shop-page
 
+.product-search__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    .search-form {
+        position: relative;
+        input {
+            outline: none;
+            background-color: #fff;
+            border: 1px solid #e7e7e7;
+            height: 40px;
+            width: 250px;
+            padding: 0px 15px 0px 45px;
+            &::placeholder {
+                letter-spacing: 0.5px;
+                font-size: 14px;
+                color: #aaaaaa;
+            }
+            &:focus {
+                border: 2px solid $brown;
+            }
+        }
+        button {
+            position: absolute;
+            left: 2px;
+            top: 3px;
+            border: none;
+            outline: none;
+            background-color: #fff;
+            height: 35px;
+            width: 40px;
+            background-image: url("../images/shop/search.svg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            padding: 0;
+            cursor: pointer;
+        }
+    }
+    .product-sort {
+        display: flex;
+        align-items: center;
+    }
+    .product-sort-text {
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: #444444;
+        margin-right: 8px;
+    }
+    .jq-selectbox {
+        background-color: #fff;
+        border: 1px solid #e7e7e7;
+        width: 250px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 40px;
+        letter-spacing: 0.5px;
+        color: #aaaaaa;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    .jq-selectbox select,
+    .jq-select-multiple select {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        opacity: 0;
+    }
+    .opened {
+        .jq-selectbox__trigger-arrow {
+            transform: rotate(180deg);
+        }
+    }
+    .jq-selectbox,
+    .jq-select-multiple {
+        position: relative;
+        display: inline-block;
+    }
+    .jq-selectbox__select {
+        position: relative;
+    }
+    .jq-selectbox__select-text {
+        overflow: hidden;
+        user-select: none;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding-left: 16px;
+    }
+    .jq-selectbox__trigger {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 35px;
+        height: 100%;
+    }
+    .jq-selectbox__trigger-arrow {
+        position: absolute;
+        top: 15px;
+        right: 12px;
+        width: 15px;
+        height: 8px;
+        background-image: url("../images/shop/chevron-down.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        transition: all 0.5s;
+    }
+    .jq-selectbox__dropdown {
+        top: 45px !important;
+        width: 100%;
+        left: 0;
+        background-color: #fff;
+        border: 1px solid #e7e7e7;
+        padding: 0px 16px 10px 16px;
+        li {
+            height: 30px;
+            &:hover {
+                color: $brown;
+            }
+        }
+    }
+}
 
+.product-page__inner {
+    display: flex;
+    padding-bottom: 140px;
+}
+
+.product-page__aside {
+    max-width: 250px;
+    margin-right: 50px;
+    .aside__item {
+        margin-bottom: 40px;
+    }
+    .aside__title {
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: #2a2a2a;
+        margin-bottom: 25px;
+    }
+    .irs-min,
+    .irs-max {
+        display: none;
+    }
+    .irs-handle {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #fff;
+        border: 2px solid $brown;
+    }
+    .irs--flat .irs-handle > i:first-child {
+        display: none;
+    }
+    .irs-line {
+        height: 5px;
+        background-color: #eee;
+    }
+    .irs-bar {
+        background-color: $brown;
+        height: 5px;
+    }
+    .irs--flat .irs-from,
+    .irs--flat .irs-single,
+    .irs--flat .irs-to {
+        @include rf400;
+        letter-spacing: 0.5px;
+        color: #ffffff;
+        font-size: 12px;
+        line-height: 12px;
+        text-shadow: none;
+        padding: 4px 8px;
+        background-color: $brown;
+        border-radius: 4px;
+    }
+    .irs--flat .irs-from:before,
+    .irs--flat .irs-single:before,
+    .irs--flat .irs-to:before {
+        border-top-color: $brown;
+    }
+    .irs-from,
+    .irs-single,
+    .irs-to {
+        top: -3px;
+    }
+    .categories__list {
+        line-height: 29px;
+        letter-spacing: 0.5px;
+        color: #888888;
+        transition: all 0.3s;
+        li + li {
+            margin-top: 8px;
+        }
+        a:hover {
+            color: $brown;
+        }
+    }
+    .checkbox__color + .checkbox__color {
+        margin-top: 10px;
+    }
+    .checkbox__color {
+        display: flex;
+        align-items: center;
+        line-height: 29px;
+        letter-spacing: 0.5px;
+        color: #888888;
+    }
+    .circle-color {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-right: 8px;
+    }
+    .circle__color-black {
+        background-color: #000;
+    }
+    .circle__color-blue {
+        background-color: #2a3594;
+    }
+    .circle__color-brown {
+        background-color: #a66223;
+    }
+    .jq-checkbox {
+        vertical-align: -1px;
+        width: 14px;
+        height: 14px;
+        margin: 0 16px 0 0;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        cursor: pointer;
+    }
+    .jq-checkbox.checked .jq-checkbox__div {
+        width: 8px;
+        height: 5px;
+        margin: 2px 0 0 2px;
+        border-bottom: 2px solid #888;
+        border-left: 2px solid #888;
+        transform: rotate(-50deg);
+    }
+    .tags-box {
+        display: flex;
+        flex-wrap: wrap;
+        .tags-box__link {
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            color: #888888;
+            padding: 10px 16px;
+            border: 1px solid #eeeeee;
+            margin: 0 8px 8px 0;
+            transition: all 0.5s;
+            &:hover {
+                color: $brown;
+            }
+        }
+    }
+}
+
+.product-page__content {
+    width: 100%;
+    .product-page__items {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+    .product__item {
+        flex-basis: calc(33.3333% - 30px);
+        max-width: 270px;
+        text-align: center;
+        background-color: #fff;
+        margin-left: 30px;
+        margin-bottom: 50px;
+        .product__item-img {
+            display: block;
+            max-width: 270px;
+            width: 100%;
+            max-height: 270px;
+            object-fit: cover;
+        }
+        .product__item-name {
+            @include raf700;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+            color: #2a2a2a;
+            margin-top: 25px;
+            transition: all 0.5s;
+            &:hover {
+                color: $brown;
+            }
+        }
+        .product__item-price {
+            letter-spacing: 0.5px;
+            color: #666666;
+            margin-top: 20px;
+            margin-right: 10px;
+            span {
+                color: #aaaaaa;
+                margin-right: 10px;
+                text-decoration: line-through;
+            }
+        }
+    }
+    .product__link-box {
+        text-align: center;
+        margin-left: 30px;
+        .product__items-link {
+            @include rf500;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #000000;
+            padding-bottom: 5px;
+            border-bottom: 2px solid $brown;
+            transition: all .5s;
+            &:hover {
+                color: $brown;
+            }
+        }
+    }
+}
 
 // end shop-page

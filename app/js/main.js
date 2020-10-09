@@ -40,7 +40,18 @@ $(function () {
         $('.slides-numbers').text(currentSlide + 1 + ' | ' + slick.slideCount);
     });
 
-    $('select, input').styler();
+    $('select, input[type="file"], input[type="checkbox"], input[type="number"]').styler();
 
+    $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 1000,
+        from: 100,
+        to: 500,
+        prefix: "$"
+    });
+
+
+    var mixer = mixitup('.product-page__items');
 
 });
