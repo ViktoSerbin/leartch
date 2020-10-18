@@ -37,5 +37,24 @@
         flex: 0 0 calc(100vw - (((100vw - 1230px) / 2) + (1230px - 30px) *0.3 ) + 15px);
         width: calc(100vw - (((100vw - 1230px) / 2) + (1230px - 30px) *0.3 ) + 15px);
     }
-    
+    .aboutus-slider {
+        .slick-list {
+            flex: 0 0 calc(100vw - (((100vw - 1230px) / 2) + (1230px - 30px) *0.01 ) + 15px);
+            width: calc(100vw - (((100vw - 1230px) / 2) + (1230px - 30px) *0.01 ) + 15px);
+        }
+    }
+    .theteam__slider {
+        .slick-list {
+            flex: 0 0 calc(100vw - (((100vw - 1230px) / 2) + (1230px - 30px) *0.01 ) + 15px);
+            width: calc(100vw - (((100vw - 1230px) / 2) + (1230px - 30px) *0.01 ) + 15px);
+        }
+    }
+    .theteam__title-box {
+        .theteam__title {
+            width: 20%;
+        }
+        .bg-line {
+            width: 80%;
+        }
+    }
 }
