@@ -1930,4 +1930,148 @@
 
 // end aboutus
 
+// start portfolio
+
+.section-portfolio {
+    margin-bottom: 140px;
+}
+
+.portfolio-sort {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    button {
+        outline: none;
+        border: none;
+        background-color: transparent;
+        @include rf500;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #000000;
+        padding: 10px 0px;
+        cursor: pointer;
+        transition: all 0.5s;
+        position: relative;
+        &:hover {
+            color: $brown;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 0;
+            background-color: #000;
+            transition: all 0.7s;
+        }
+        &.mixitup-control-active {
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.portfolio__inner {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    margin-left: -90px;
+}
+
+.section-portfolio .potfolio__item {
+    flex-basis: calc(50% - 90px);
+    margin-left: 90px;
+}
+
+.potfolio__item {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    max-width: 553px;
+    width: 100%;
+    margin-bottom: 70px;
+    .potfolio__item-img {
+        display: block;
+        max-width: 512px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .potfolio__item-date {
+        writing-mode: vertical-lr;
+        width: 25px;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #a7a7a7;
+    }
+    .potfolio__item-info {
+        max-width: 400px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: #fff;
+        padding: 40px 100px 0 80px;
+    }
+    .potfolio__item-name {
+        @include raf600;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0.5px;
+        color: #2a2a2a;
+        margin-bottom: 45px;
+    }
+    .potfolio__item-link {
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: $brown;
+        @include rf500;
+        transition: all 0.5s;
+        &:hover {
+            color: $librown;
+        }
+        &::after {
+            content: "+";
+            margin-left: 15px;
+            font-size: 20px;
+        }
+    }
+}
+
+.portfolio-link__box {
+    text-align: center;
+    .portfolio-btn {
+        @include rf500;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #000000;
+        padding-bottom: 10px;
+        transition: all .3s;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            background-color: $brown;
+            transition: all .3s;
+        }
+        &:hover {
+            color: $librown;
+            &::before {
+                background-color: $librown;
+            }
+        }
+    }
+}
+
+// end portfolio
+
 @import "media";
