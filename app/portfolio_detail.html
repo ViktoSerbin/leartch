@@ -170,9 +170,7 @@
 
     <section class="section-info">
         <div class="container">
-            <h3 class="section-info__title">
-                Портфолио
-            </h3>
+            <h3 class="section-info__title"></h3>
             <div class="breadcrumbs">
                 <div class="breadcrumbs__inner">
                     <ul class="breadcrumbs__list">
@@ -182,7 +180,12 @@
                         <div>
                         </div>
                         <li>
-                            <span>Портфолио</span>
+                            <a href="portfolio.html">Портфолио</a>
+                        </li>
+                        <div>
+                        </div>
+                        <li>
+                            <span>Элегантный роскошный дом</span>
                         </li>
                     </ul>
                 </div>
@@ -190,65 +193,80 @@
         </div>
     </section>
 
-    <section class="section-portfolio">
+    <section class="portfolio__one">
         <div class="container">
-            <div class="portfolio-sort">
-                <button tupe="button" data-filter="all">Все</button>
-                <button tupe="button" data-filter=".category-completed">Завершенные</button>
-                <button tupe="button" data-filter=".category-coming">Ближайшие</button>
-            </div>
-            <div class="portfolio__inner">
-                <div class="potfolio__item mix category-completed" data-order="1">
-                    <img class="potfolio__item-img" src="images/portfolio/potfolio-1.jpg" alt="">
-                    <div class="potfolio__item-date">
-                        2020 - Интерьер
-                    </div>
-                    <div class="potfolio__item-info">
-                        <div class="potfolio__item-name">
-                            Элегантный роскошный дом
+            <div class="portfolio__one-info">
+                <h3 class="portfolio__one-title">
+                    Элегантный роскошный дом
+                </h3>
+                <div class="portfolio__one-info--items">
+                    <div class="portfolio__one-info--item">
+                        <div class="portfolio__one-info--title">
+                            Клиент
                         </div>
-                        <a href="portfolio_detail.html" class="potfolio__item-link">Читать</a>
-                    </div>
-                </div>
-                <div class="potfolio__item mix category-completed category-coming" data-order="2">
-                    <img class="potfolio__item-img" src="images/portfolio/potfolio-2.jpg" alt="">
-                    <div class="potfolio__item-date">
-                        2020 - Интерьер
-                    </div>
-                    <div class="potfolio__item-info">
-                        <div class="potfolio__item-name">
-                            Деревянный дом в сосновом лесу
+                        <div class="portfolio__one-info--category">
+                            Nature Homestay
                         </div>
-                        <a href="portfolio_detail.html" class="potfolio__item-link">Читать</a>
                     </div>
-                </div>
-                <div class="potfolio__item mix category-coming" data-order="3">
-                    <img class="potfolio__item-img" src="images/portfolio/potfolio-3.jpg" alt="">
-                    <div class="potfolio__item-date">
-                        2020 - Интерьер
-                    </div>
-                    <div class="potfolio__item-info">
-                        <div class="potfolio__item-name">
-                            Современная жизнь в лесу
+                    <div class="portfolio__one-info--item">
+                        <div class="portfolio__one-info--title">
+                            Категория
                         </div>
-                        <a href="portfolio_detail.html" class="potfolio__item-link">Читать</a>
-                    </div>
-                </div>
-                <div class="potfolio__item mix category-completed" data-order="4">
-                    <img class="potfolio__item-img" src="images/portfolio/potfolio-4.jpg" alt="">
-                    <div class="potfolio__item-date">
-                        2020 - Архитектура
-                    </div>
-                    <div class="potfolio__item-info">
-                        <div class="potfolio__item-name">
-                            Современный минималистский дом
+                        <div class="portfolio__one-info--category">
+                            Архитектура
                         </div>
-                        <a href="portfolio_detail.html" class="potfolio__item-link">Читать</a>
+                    </div>
+                    <div class="portfolio__one-info--item">
+                        <div class="portfolio__one-info--title">
+                            Дата
+                        </div>
+                        <div class="portfolio__one-info--category">
+                            11 июля 2019
+                        </div>
+                    </div>
+                    <div class="portfolio__one-info--item">
+                        <div class="portfolio__one-info--title">
+                            Тег
+                        </div>
+                        <div class="portfolio__one-info--category">
+                            Архитектура
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="portfolio-link__box">
-                <a class="portfolio-btn" href="#">СМОТРЕТЬ БОЛЬШЕ</a>
+            <div class="portfolio__one-text">
+                Пример использования UX-дизайна мобильного приложения Perfect Recipes, которое сочетает в себе функции приготовления и покупки того, что необходимо для еды пользователей.
+            </div>
+        </div>
+        <div class="portfolio__one-inner">
+            <div class="portfolio__one-images">
+                <img class="portfolio__one-img" src="images/slider-big-1.jpg" alt="">
+            </div>
+            <div class="portfolio__one-images">
+                <img class="portfolio__one-img" src="images/slider-big-2.jpg" alt="">
+            </div>
+            <div class="portfolio__one-images">
+                <img class="portfolio__one-img" src="images/slider-big-3.jpg" alt="">
+            </div>
+        </div>
+        <div class="container">
+            <div class="portfolio__one-navigation">
+                <div class="portfolio__one-box portfolio__one-box-prev">
+                    <a class="portfolio__one-btn portfolio__one-prev" href="#">
+                        ПРЕДЫДУЩИЙ
+                    </a>
+                    <div class="portfolio__one-link--name">
+                        Современный минималистский дом
+                    </div>
+                </div>
+                <div class="portfolio__one-box portfolio__one-box-next">
+                    <a class="portfolio__one-btn portfolio__one-next" href="#">
+                        СЛЕДУЮЩИЙ
+                    </a>
+                    <div class="portfolio__one-link--name">
+                        Мега экологичный дом
+                    </div>
+                </div>
             </div>
         </div>
     </section>
