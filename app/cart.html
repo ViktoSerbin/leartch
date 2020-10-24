@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -170,103 +171,122 @@
 
     <section class="section-info">
         <div class="container">
-            <h3 class="section-info__title"></h3>
-            <div class="breadcrumbs">
-                <div class="breadcrumbs__inner">
-                    <ul class="breadcrumbs__list">
-                        <li>
-                            <a href="index.html">Главная</a>
-                        </li>
-                        <div>
-                        </div>
-                        <li>
-                            <a href="portfolio.html">Портфолио</a>
-                        </li>
-                        <div>
-                        </div>
-                        <li>
-                            <span>Элегантный роскошный дом</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <h3 class="section-info__title">
+                Корзина
+            </h3>
         </div>
     </section>
 
-    <section class="portfolio__one">
+    <section class="cart">
         <div class="container">
-            <div class="portfolio__one-info">
-                <h3 class="portfolio__one-title">
-                    Элегантный роскошный дом
-                </h3>
-                <div class="portfolio__one-info--items">
-                    <div class="portfolio__one-info--item">
-                        <div class="portfolio__one-info--title">
-                            Клиент
-                        </div>
-                        <div class="portfolio__one-info--category">
-                            Nature Homestay
+            <div class="cart__inner">
+                <div class="cart__product-info">
+                    <div class="cart__info-">
+                        <div class="cart__info-text">
+                            Товар
                         </div>
                     </div>
-                    <div class="portfolio__one-info--item">
-                        <div class="portfolio__one-info--title">
-                            Категория
+                    <div class="cart__info-box">
+                        <div class="cart__info-text">
+                            Цена
                         </div>
-                        <div class="portfolio__one-info--category">
-                            Архитектура
+                        <div class="cart__info-text">
+                            КОЛИЧЕСТВО
                         </div>
-                    </div>
-                    <div class="portfolio__one-info--item">
-                        <div class="portfolio__one-info--title">
-                            Дата
-                        </div>
-                        <div class="portfolio__one-info--category">
-                            11 июля 2019
-                        </div>
-                    </div>
-                    <div class="portfolio__one-info--item">
-                        <div class="portfolio__one-info--title">
-                            Тег
-                        </div>
-                        <div class="portfolio__one-info--category">
-                            Архитектура
+                        <div class="cart__info-text">
+                            ВСЕГО
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="portfolio__one-text">
-                Пример использования UX-дизайна мобильного приложения Perfect Recipes, которое сочетает в себе функции приготовления и покупки того, что необходимо для еды пользователей.
-            </div>
-        </div>
-        <div class="portfolio__one-inner">
-            <div class="portfolio__one-images">
-                <img class="portfolio__one-img" src="images/slider-big-1.jpg" alt="">
-            </div>
-            <div class="portfolio__one-images">
-                <img class="portfolio__one-img" src="images/slider-big-2.jpg" alt="">
-            </div>
-            <div class="portfolio__one-images">
-                <img class="portfolio__one-img" src="images/slider-big-3.jpg" alt="">
-            </div>
-        </div>
-        <div class="container">
-            <div class="portfolio__one-navigation">
-                <div class="portfolio__one-box portfolio__one-box-prev">
-                    <a class="portfolio__one-btn portfolio__one-prev" href="#">
-                        ПРЕДЫДУЩИЙ
-                    </a>
-                    <div class="portfolio__one-link--name">
-                        Современный минималистский дом
+                <div class="cart__items">
+                    <div class="cart__item">
+                        <div class="cart__product-wrap">
+                            <a href="#" class="cart__product-delete">
+                                <div></div>
+                                <div></div>
+                            </a>
+                            <img class="cart__product-img" src="images/shop/product-img-1.jpg" alt="">
+                            <div class="cart__product-name">
+                                Stocksund
+                            </div>
+                        </div>
+                        <div class="cart__item-box">
+                            <div class="cart__product-price--box cart__product-price">
+                                $40
+                            </div>
+                            <div class="cart__product-price--box cart__product-counter">
+                                <input type="number" min="1" value="1">
+                            </div>
+                            <div class="cart__product-price--box cart__product-total">
+                                $40
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__item">
+                        <div class="cart__product-wrap">
+                            <a href="#" class="cart__product-delete">
+                                <div></div>
+                                <div></div>
+                            </a>
+                            <img class="cart__product-img" src="images/shop/product-img-4.jpg" alt="">
+                            <div class="cart__product-name">
+                                Lunarp
+                            </div>
+                        </div>
+                        <div class="cart__item-box">
+                            <div class="cart__product-price">
+                                $40
+                            </div>
+                            <div class="cart__product-counter">
+                                <input type="number" min="1" value="1">
+                            </div>
+                            <div class="cart__product-total">
+                                $40
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="portfolio__one-box portfolio__one-box-next">
-                    <a class="portfolio__one-btn portfolio__one-next" href="#">
-                        СЛЕДУЮЩИЙ
-                    </a>
-                    <div class="portfolio__one-link--name">
-                        Мега экологичный дом
+                <div class="cart__coupon-box">
+                    <form>
+                        <input type="text" placeholder="Код купона">
+                        <button type="button">ПРИМЕНИТЬ</button>
+                    </form>
+                    <a class="update__cart-btn" href="#">Обновить корзину</a>
+                </div>
+            </div>
+            <div class="cart__bottom-total">
+                <div class="cart__bottom-title">
+                    Всего в корзине
+                </div>
+                <div class="cart__bottom-items">
+                    <div class="cart__bottom-item">
+                        <div class="cart__bottom-text">
+                            ПРОМЕЖУТОЧНЫЙ ИТОГ
+                        </div>
+                        <div class="cart__bottom-sum">
+                            $40
+                        </div>
+                    </div>
+                    <div class="cart__bottom-item">
+                        <div class="cart__bottom-text">
+                            НДС
+                        </div>
+                        <div class="cart__bottom-sum">
+                            $4
+                        </div>
+                    </div>
+                    <div class="cart__bottom-item">
+                        <div class="cart__bottom-text">
+                            ВСЕГО
+                        </div>
+                        <div class="cart__bottom-sum">
+                            $44
+                        </div>
                     </div>
                 </div>
+                <a class="cart__total-btn" href="#">
+                    Процесс оформления заказа
+                </a>
             </div>
         </div>
     </section>

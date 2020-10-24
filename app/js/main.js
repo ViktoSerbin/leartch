@@ -85,6 +85,8 @@ $(function () {
         autoplay: 3000,
     });
 
+    
+
     var mixer = mixitup('.product-page__items, .portfolio__inner');
 
 });
