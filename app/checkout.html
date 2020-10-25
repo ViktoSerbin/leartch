@@ -172,124 +172,113 @@
     <section class="section-info">
         <div class="container">
             <h3 class="section-info__title">
-                Корзина
+                Оформление заказа
             </h3>
         </div>
     </section>
 
-    <section class="cart">
+    <section class="checkout">
         <div class="container">
-            <div class="cart__inner">
-                <div class="cart__product-info">
-                    <div class="cart__info-">
-                        <div class="cart__info-text">
-                            Товар
-                        </div>
-                    </div>
-                    <div class="cart__info-box">
-                        <div class="cart__info-text">
-                            Цена
-                        </div>
-                        <div class="cart__info-text">
-                            КОЛИЧЕСТВО
-                        </div>
-                        <div class="cart__info-text">
-                            ВСЕГО
-                        </div>
-                    </div>
-                </div>
-                <div class="cart__items">
-                    <div class="cart__item">
-                        <div class="cart__product-wrap">
-                            <a href="#" class="cart__product-delete">
-                                <div></div>
-                                <div></div>
-                            </a>
-                            <img class="cart__product-img" src="images/shop/product-img-1.jpg" alt="">
-                            <div class="cart__product-name">
-                                Stocksund
-                            </div>
-                        </div>
-                        <div class="cart__item-box">
-                            <div class="cart__product-price--box cart__product-price">
-                                $40
-                            </div>
-                            <div class="cart__product-price--box cart__product-counter">
-                                <input type="number" min="1" value="1">
-                            </div>
-                            <div class="cart__product-price--box cart__product-total">
-                                $40
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cart__item">
-                        <div class="cart__product-wrap">
-                            <a href="#" class="cart__product-delete">
-                                <div></div>
-                                <div></div>
-                            </a>
-                            <img class="cart__product-img" src="images/shop/product-img-4.jpg" alt="">
-                            <div class="cart__product-name">
-                                Lunarp
-                            </div>
-                        </div>
-                        <div class="cart__item-box">
-                            <div class="cart__product-price">
-                                $40
-                            </div>
-                            <div class="cart__product-counter">
-                                <input type="number" min="1" value="1">
-                            </div>
-                            <div class="cart__product-total">
-                                $40
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cart__coupon-box">
-                    <form>
-                        <input type="text" placeholder="Код купона">
-                        <button type="button">ПРИМЕНИТЬ</button>
-                    </form>
-                    <a class="update__cart-btn" href="#">Обновить корзину</a>
+            <div class="coupon__wrap">
+                <div class="coupon__text">
+                    Есть купон? <a href="#">Нажмите здесь</a> , чтобы ввести свой код
                 </div>
             </div>
-            <div class="cart__bottom-total">
-                <div class="cart__bottom-title">
-                    Всего в корзине
-                </div>
-                <div class="cart__bottom-items">
-                    <div class="cart__bottom-item">
-                        <div class="cart__bottom-text">
-                            ПРОМЕЖУТОЧНЫЙ ИТОГ
+            <div class="checkout__inner">
+                <div class="checkout__item">
+                    <h4 class="checkout__item-title">
+                        Платежные реквизиты
+                    </h4>
+                    <form>
+                        <div class="checkout__form-naming">
+                            <input type="text" placeholder="Фамилия*" required>
+                            <input type="text" placeholder="Имя*" required>
                         </div>
-                        <div class="cart__bottom-sum">
+                        <input type="text" placeholder="Название компании (по желанию)">
+                        <select required>
+                            <option>Страна*</option>
+                            <option>Украина</option>
+                            <option>Германия</option>
+                        </select>
+                        <input type="text" placeholder="Адрес*" required>
+                        <input type="text" placeholder="Почтовый индекс / ZIP (необязательно)">
+                        <input type="text" placeholder="Город *" required>
+                        <input type="text" placeholder="Телефон*" required>
+                        <input type="text" placeholder="Email*" required>
+                    </form>
+                </div>
+                <div class="checkout__item">
+                    <h4 class="checkout__item-title">
+                        Дополнительная информация
+                    </h4>
+                    <form>
+                        <textarea placeholder="Примечания к заказу (необязательно)"></textarea>
+                    </form>
+                </div>
+            </div>
+            <div class="checkout__total">
+                <h4 class="checkout__item-title">
+                    Список товаров
+                </h4>
+                <div class="checkout__total-item">
+                    <div class="checkout__total-item--title">
+                        ТОВАР
+                    </div>
+                    <div class="checkout__total-product">
+                        <div class="checkout__total-product--name">
+                            Stocksund x 1
+                        </div>
+                        <div class="checkout__total-item--price">
                             $40
                         </div>
                     </div>
-                    <div class="cart__bottom-item">
-                        <div class="cart__bottom-text">
-                            НДС
+                    <div class="checkout__total-product">
+                        <div class="checkout__total-product--name">
+                            Stocksund x 1
                         </div>
-                        <div class="cart__bottom-sum">
-                            $4
-                        </div>
-                    </div>
-                    <div class="cart__bottom-item">
-                        <div class="cart__bottom-text">
-                            ВСЕГО
-                        </div>
-                        <div class="cart__bottom-sum">
-                            $44
+                        <div class="checkout__total-item--price">
+                            $40
                         </div>
                     </div>
                 </div>
-                <a class="cart__total-btn" href="checkout.html">
-                    Процесс оформления заказа
-                </a>
+                <div class="checkout__total-item">
+                    <div class="checkout__total-wrap">
+                        <div class="checkout__total-item--title">
+                            ПРОМЕЖУТОЧНЫЙ ИТОГ
+                        </div>
+                        <div class="checkout__total-item--price">
+                            $80
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout__total-item">
+                    <div class="checkout__total-wrap">
+                        <div class="checkout__total-item--title">
+                            НДС
+                        </div>
+                        <div class="checkout__total-item--price">
+                            $8
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout__total-item checkout__total-item--bottom">
+                    <div class="checkout__total-wrap">
+                        <div class="checkout__total-item--title">
+                            ВСЕГО
+                        </div>
+                        <div class="checkout__total-item--price">
+                            $88
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Оформить заказ</button>
             </div>
         </div>
     </section>
+
+
+
+
 
     <footer class="footer">
         <div class="footer-top" style="background-image: url('images/story-bg.jpg');">
