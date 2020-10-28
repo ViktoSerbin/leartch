@@ -3234,7 +3234,7 @@
         text-transform: uppercase;
         color: #000;
         border-bottom: 2px solid $brown;
-        transition: all .3s;
+        transition: all 0.3s;
         &:hover {
             color: $librown;
             border-bottom: 2px solid $librown;
@@ -3243,5 +3243,55 @@
 }
 
 // end faqs
+
+// start page-404
+
+.page-404 {
+    background-image: url("../images/story-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: 100vh;
+    margin-top: 130px;
+    .page-404__wrapper {
+        text-align: center;
+        padding: 140px 0;
+    }
+    .page-404__404 {
+        @include raf700;
+        font-size: 100px;
+        color: #2a2a2a;
+        margin-bottom: 30px;
+    }
+    .page-404__title {
+        font-size: 48px;
+        line-height: 62px;
+        letter-spacing: 2px;
+        color: #2a2a2a;
+        margin-bottom: 25px;
+    }
+    .page-404__text {
+        line-height: 29px;
+        letter-spacing: 0.5px;
+        color: #888;
+        margin-bottom: 80px;
+    }
+    .page-404__btn {
+        @include rf500;
+        line-height: 29px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #000;
+        border-bottom: 2px solid $brown;
+        transition: all .3s;
+        &:hover {
+            color: $librown;
+            border-bottom: 2px solid $librown;
+            padding: 0 7px;
+        }
+    }
+}
+
+// end page-404
 
 @import "media";
