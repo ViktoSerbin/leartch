@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -110,7 +109,7 @@
                                 <a class="menu__list-link" href="shop.html">Магазин</a>
                             </li>
                             <li class="menu__list-item">
-                                <a class="menu__list-link" href="contact.html">Контакты</a>
+                                <a class="menu__list-link" href="#">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -172,121 +171,77 @@
     <section class="section-info">
         <div class="container">
             <h3 class="section-info__title">
-                Корзина
+                Связаться с нами
             </h3>
+            <div class="breadcrumbs">
+                <div class="breadcrumbs__inner">
+                    <ul class="breadcrumbs__list">
+                        <li>
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <div>
+                        </div>
+                        <li>
+                            <span>Контакты</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="cart">
+    <section class="contact-page">
         <div class="container">
-            <div class="cart__inner">
-                <div class="cart__product-info">
-                    <div class="cart__info-">
-                        <div class="cart__info-text">
-                            Товар
-                        </div>
-                    </div>
-                    <div class="cart__info-box">
-                        <div class="cart__info-text">
-                            Цена
-                        </div>
-                        <div class="cart__info-text">
-                            КОЛИЧЕСТВО
-                        </div>
-                        <div class="cart__info-text">
-                            ВСЕГО
-                        </div>
+            <div class="contact-page__info">
+                <div class="contact-page__info--item">
+                    <h4 class="contact-page__info--title">
+                        Телефон
+                    </h4>
+                    <div class="contact-page__info--text">
+                        +7 (885) 589 69 85
                     </div>
                 </div>
-                <div class="cart__items">
-                    <div class="cart__item">
-                        <div class="cart__product-wrap">
-                            <a href="#" class="cart__product-delete">
-                                <div></div>
-                                <div></div>
-                            </a>
-                            <img class="cart__product-img" src="images/shop/product-img-1.jpg" alt="">
-                            <div class="cart__product-name">
-                                Stocksund
-                            </div>
-                        </div>
-                        <div class="cart__item-box">
-                            <div class="cart__product-price--box cart__product-price">
-                                $40
-                            </div>
-                            <div class="cart__product-price--box cart__product-counter">
-                                <input type="number" min="1" value="1">
-                            </div>
-                            <div class="cart__product-price--box cart__product-total">
-                                $40
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cart__item">
-                        <div class="cart__product-wrap">
-                            <a href="#" class="cart__product-delete">
-                                <div></div>
-                                <div></div>
-                            </a>
-                            <img class="cart__product-img" src="images/shop/product-img-4.jpg" alt="">
-                            <div class="cart__product-name">
-                                Lunarp
-                            </div>
-                        </div>
-                        <div class="cart__item-box">
-                            <div class="cart__product-price">
-                                $40
-                            </div>
-                            <div class="cart__product-counter">
-                                <input type="number" min="1" value="1">
-                            </div>
-                            <div class="cart__product-total">
-                                $40
-                            </div>
-                        </div>
+                <div class="contact-page__info--item">
+                    <h4 class="contact-page__info--title">
+                        Email
+                    </h4>
+                    <div class="contact-page__info--text">
+                        archi@info.com
                     </div>
                 </div>
-                <div class="cart__coupon-box">
-                    <form>
-                        <input type="text" placeholder="Код купона">
-                        <button type="button">ПРИМЕНИТЬ</button>
-                    </form>
-                    <a class="update__cart-btn" href="#">Обновить корзину</a>
+                <div class="contact-page__info--item">
+                    <h4 class="contact-page__info--title">
+                        Главный офис
+                    </h4>
+                    <div class="contact-page__info--text">
+                        Litačka, Nové Město, Чешская Республика
+                    </div>
                 </div>
             </div>
-            <div class="cart__bottom-total">
-                <div class="cart__bottom-title">
-                    Всего в корзине
-                </div>
-                <div class="cart__bottom-items">
-                    <div class="cart__bottom-item">
-                        <div class="cart__bottom-text">
-                            ПРОМЕЖУТОЧНЫЙ ИТОГ
+        </div>
+        <div class="contact-page__inner">
+            <div class="contact-page__content">
+                <div class="contact-page__container">
+                    <div class="contact-page__body">
+                        <div class="contact-page__text">
+                            Заполните форму, чтобы получать информацию о продуктах, событиях и мире True Design. Мы будем рады свяжемся с вами в ближайшее время.
                         </div>
-                        <div class="cart__bottom-sum">
-                            $40
-                        </div>
-                    </div>
-                    <div class="cart__bottom-item">
-                        <div class="cart__bottom-text">
-                            НДС
-                        </div>
-                        <div class="cart__bottom-sum">
-                            $4
-                        </div>
-                    </div>
-                    <div class="cart__bottom-item">
-                        <div class="cart__bottom-text">
-                            ВСЕГО
-                        </div>
-                        <div class="cart__bottom-sum">
-                            $44
-                        </div>
+                        <form class="contact-page__form">
+                            <input type="text" placeholder="Имя*" required>
+                            <input type="text" placeholder="Email Адрес*" required>
+                            <input type="text" placeholder="Телефон">
+                            <textarea placeholder="Сообщение*" required></textarea>
+                            <div class="contact-page__checkbox">
+                                <input type="checkbox">
+                                <label>Я согласен с условиями Политики конфиденциальности *</label>
+                            </div>
+                            <button class="contact-page__btn" type="submit">ПОСЛАТЬ ЗАПРОС</button>
+                        </form>
                     </div>
                 </div>
-                <a class="cart__total-btn" href="checkout.html">
-                    Процесс оформления заказа
-                </a>
+            </div>
+            <div class="contact-page__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d88508.26361635655!2d-64.87064074646437!3d46.11323356130899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ca0b92918d41765%3A0xdc10a333a4e63c4!2z0JzQvtC90LrRgtC-0L0sINCd0YzRji3QkdGA0YPQvdGB0LLQuNC6LCDQmtCw0L3QsNC00LA!5e0!3m2!1sru!2sua!4v1603834854319!5m2!1sru!2sua" width="900" height="700" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
     </section>
@@ -330,7 +285,7 @@
                                 <a class="menu__list-link" href="shop.html">Магазин</a>
                             </li>
                             <li class="menu__list-item">
-                                <a class="menu__list-link" href="contact.html">Контакты</a>
+                                <a class="menu__list-link" href="#">Контакты</a>
                             </li>
                         </ul>
                     </nav>
