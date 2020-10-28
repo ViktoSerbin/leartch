@@ -3175,7 +3175,7 @@
             border-bottom: 2px solid $brown;
             cursor: pointer;
             margin-left: auto;
-            transition: all .3s;
+            transition: all 0.3s;
             &:hover {
                 color: $librown;
                 border-bottom: 2px solid $librown;
@@ -3192,5 +3192,56 @@
 }
 
 // end contact-page
+
+// star faqs
+
+.faqs {
+    padding-bottom: 140px;
+}
+
+.faqs__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    .faqs__items {
+        max-width: 590px;
+        padding-right: 20px;
+    }
+    .faqs__item {
+        margin-bottom: 60px;
+        &-question {
+            @include raf600;
+            font-size: 18px;
+            line-height: 32px;
+            letter-spacing: 0.5px;
+            color: #000;
+            margin-bottom: 25px;
+        }
+        &-answer {
+            line-height: 29px;
+            letter-spacing: 0.5px;
+            color: #888888;
+        }
+    }
+}
+
+.faqs-btn__box {
+    text-align: center;
+    .faqs-btn {
+        @include rf500;
+        line-height: 29px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #000;
+        border-bottom: 2px solid $brown;
+        transition: all .3s;
+        &:hover {
+            color: $librown;
+            border-bottom: 2px solid $librown;
+        }
+    }
+}
+
+// end faqs
 
 @import "media";
