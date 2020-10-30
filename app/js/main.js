@@ -13,6 +13,14 @@ $(function () {
         infinite: false,
         nextArrow: '<button class="slider-btn slider-btn__left"><svg width="11" height="17" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 17L9.74852 9.26017C9.82292 9.19416 9.8655 9.09946 9.8655 9C9.8655 8.90054 9.82292 8.80584 9.74852 8.73983L1 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
         prevArrow: '<button class="slider-btn slider-btn__right"><svg width="11" height="17" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 17L1.25148 9.26017C1.17708 9.19416 1.1345 9.09946 1.1345 9C1.1345 8.90054 1.17708 8.80584 1.25148 8.73983L10 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+        responsive: [
+            {
+              breakpoint: 750,
+              settings: {
+                  arrows: false,
+              }
+            },
+          ]
     });
 
 
