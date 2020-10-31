@@ -705,6 +705,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    .brand-img {
+        padding: 15px;
+    }
 }
 
 .ourprojects {
@@ -732,7 +735,7 @@
         color: #fff;
         position: absolute;
         top: 3px;
-        left: 100px;
+        left: 10%;
     }
 }
 
@@ -741,20 +744,22 @@
     display: flex;
     margin-left: -130px;
     padding-top: 90px;
+    .slick-slide {
+        margin-right: 30px;
+    }
     .slider-btn {
         position: absolute;
         top: 0;
-        left: 160px;
+        left: 15%;
         background-color: transparent;
         outline: none;
         border: none;
         cursor: pointer;
     }
     .slider-btn__left {
-        left: 305px;
+        left: 27.5%;
     }
     .ourprojects__item {
-        margin-right: 60px;
         max-width: 370px;
         width: 100%;
         .ourprojects__images {
