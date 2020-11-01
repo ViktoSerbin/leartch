@@ -86,6 +86,9 @@
             width: 100%;
         }
     }
+    .product-page__aside {
+        margin-right: 15px;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -138,6 +141,35 @@
         }
         .slider-btn__left {
             left: 18%;
+        }
+    }
+    .product-search__box {
+        display: block;
+        .product-search__wrapper {
+            margin-bottom: 15px;
+        }
+        .aside__menu-btn {
+            display: block;
+        }
+        .search-form {
+            width: 100%;
+            input {
+                width: 100%;
+            }
+        }
+        .product-sort {
+            justify-content: flex-end;
+        }
+    }
+    .product-page__aside {
+        display: none;
+    }
+    .product-page__content {
+        .product-page__items {
+            margin-left: -30px;
+        }
+        .product__link-box {
+            margin-left: 0;
         }
     }
 }
@@ -232,6 +264,14 @@
     }
 }
 
+@media (max-width: 600px) {
+    .product-page__content {
+        .product__item {
+            flex-basis: calc(50% - 30px);
+        }
+    }
+}
+
 @media (max-width: 550px) {
     body {
         font-size: 14px;
@@ -319,6 +359,12 @@
             justify-content: space-between;
         }
     }
+    .product-search__box {
+        .product-sort-text {
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+    }
 }
 
 @media (max-width: 450px) {
@@ -329,6 +375,24 @@
         .top-slider__title {
             font-size: 28px;
             line-height: 38px;
+        }
+    }
+    .product-search__box {
+        .product-sort {
+            flex-direction: column;
+        }
+        .product-sort-text {
+            margin-bottom: 15px;
+        }
+    }
+    .product-page__content {
+        .product-page__items {
+            justify-content: center;
+            margin-left: 0;
+        }
+        .product__item {
+            flex-basis: calc(100% - 30px);
+            margin-left: 0;
         }
     }
 }
@@ -356,7 +420,11 @@
 
 
 
-
+@media (min-width: 868px) {
+    .product-page__aside {
+        display: block !important;
+    }
+}
 
 @media (min-width: 900px) {
     .product-one__inner {
