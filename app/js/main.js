@@ -80,6 +80,14 @@ $(function () {
         dots: true,
         nextArrow: '<button class="slider-btn slider-btn__left"><svg width="12" height="22" viewBox="0 0 20 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.43359 33L18.9306 17.5203C19.0794 17.3883 19.1646 17.1989 19.1646 17C19.1646 16.8011 19.0794 16.6117 18.9306 16.4797L1.43359 1" stroke="#2A2A2A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
         prevArrow: '<button class="slider-btn slider-btn__right"><svg width="12" height="22" viewBox="0 0 20 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.731 33L1.23391 17.5203C1.08512 17.3883 0.999964 17.1989 0.999964 17C0.999964 16.8011 1.08512 16.6117 1.23391 16.4797L18.731 1" stroke="#2A2A2A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
+        responsive: [
+            {
+                breakpoint: 750,
+                settings: {
+                    arrows: false,
+                }
+            },
+        ]
     });
 
     $('.ourprojects__slider').on(`init reInit`, function (event, slick) {
