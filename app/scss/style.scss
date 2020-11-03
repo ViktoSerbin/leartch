@@ -1997,6 +1997,7 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
+    flex-wrap: wrap;
     max-width: 500px;
     margin: 0 auto;
     margin-bottom: 80px;
@@ -2148,6 +2149,10 @@
     .portfolio__one-info--items {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .portfolio__one-info--item {
+        max-width: 140px;
     }
     &--title {
         @include raf700;
@@ -2188,6 +2193,7 @@
 .portfolio__one-navigation {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 140px;
     .portfolio__one-box {
         width: 50%;

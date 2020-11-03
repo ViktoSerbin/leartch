@@ -148,6 +148,14 @@
         width: 100%;
         margin: 15px;
     }
+    .potfolio__item {
+        .potfolio__item-info {
+            padding: 20px 100px 0 60px;
+        }
+        .potfolio__item-name {
+            margin-bottom: 25px;
+        }
+    }
 }
 
 @media (max-width: 900px) {
@@ -176,6 +184,13 @@
     }
     .theteam__content {
         padding: 80px 0 80px 25px;
+    }
+    .portfolio__inner {
+        margin-left: -50px;
+    }
+    .section-portfolio .potfolio__item {
+        flex-basis: calc(50% - 50px);
+        margin-left: 50px;
     }
 }
 
@@ -238,6 +253,11 @@
         .aboutus-box__text + .aboutus-box__text {
             margin-top: 20px;
             margin-left: 100px;
+        }
+    }
+    .portfolio__one-navigation {
+        .portfolio__one-box {
+            padding: 50px;
         }
     }
 }
@@ -328,6 +348,27 @@
     .ourservices__items-about .ourservices__item .ourservices__images {
         width: 100%;
     }
+    .potfolio__item {
+        .potfolio__item-info {
+            width: 100%;
+            padding: 15px 20px 5px 20px;
+        }
+        .potfolio__item-name {
+            margin-bottom: 20px;
+        }
+    }
+    .portfolio__one-info {
+        margin-bottom: 50px;
+        .portfolio__one-title {
+            font-size: 34px;
+            margin-bottom: 50px;
+        }
+    }
+    .portfolio__one-navigation {
+        .portfolio__one-box {
+            padding: 30px;
+        }
+    }
 }
 
 @media (max-width: 650px) {
@@ -384,6 +425,21 @@
     .ourservices__item .ourservices__box {
         max-width: 100%;
     }
+    .section-portfolio {
+        margin-bottom: 70px;
+    }
+    .portfolio__inner {
+        margin-bottom: 50px;
+    }
+    .portfolio__one-info {
+        .portfolio__one-info--item {
+            flex-basis: calc(50%);
+            margin: 10px;
+        }
+    }
+    .portfolio__one-navigation {
+        margin-bottom: 70px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -415,6 +471,17 @@
     .theteam__slider {
         .slick-slide {
             margin-right: 30px;
+        }
+    }
+    .section-portfolio .potfolio__item {
+        flex-basis: calc(100%);
+    }
+    .portfolio__one-images {
+        margin-bottom: 50px;
+    }
+    .portfolio__one-navigation {
+        .portfolio__one-box {
+            width: 100%;
         }
     }
 }
@@ -530,6 +597,12 @@
     .awards__item {
         .awards__item-img {
             margin-right: 15px;
+        }
+    }
+    .portfolio__one-info {
+        .portfolio__one-title {
+            font-size: 24px;
+            margin-bottom: 30px;
         }
     }
 }
