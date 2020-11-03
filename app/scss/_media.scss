@@ -156,6 +156,22 @@
             margin-bottom: 25px;
         }
     }
+    .blog-section__inner {
+        justify-content: center;
+        margin-left: -30px
+    }
+    .blog-section__item {
+        flex-basis: calc(33.3333% - 30px);
+        margin-left: 30px;
+    }
+    .blog__one-dop--images {
+        flex-direction: column;
+        margin-bottom: 120px;
+        .blog__one-dop--img + .blog__one-dop--img {
+            margin-left: 0;
+            margin-top: 50px;
+        }
+    }
 }
 
 @media (max-width: 900px) {
@@ -258,6 +274,17 @@
     .portfolio__one-navigation {
         .portfolio__one-box {
             padding: 50px;
+        }
+    }
+    .blog__one-content--box {
+        .blog__one-content--box-title {
+            font-size: 18px;
+        }
+        .blog__one-content--box-list {
+            margin-left: 10px;
+            li {
+                padding-left: 0;
+            }
         }
     }
 }
@@ -369,6 +396,25 @@
             padding: 30px;
         }
     }
+    .blog-section__item {
+        flex-basis: calc(50% - 30px);
+    }
+    .blog__one-title {
+        font-size: 38px;
+        line-height: 42px;
+        letter-spacing: 1px;
+    }
+    .blog__one-text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .blog__one-content--title {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .blog__one-content--box {
+        margin-bottom: 70px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -440,6 +486,18 @@
     .portfolio__one-navigation {
         margin-bottom: 70px;
     }
+    .blog-section__inner {
+        margin-bottom: 50px;
+    }
+    .blog-section__box {
+        margin-bottom: 70px;
+    }
+    .blog-section__item {
+        .blog-section__name {
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
 }
 
 @media (max-width: 600px) {
@@ -483,6 +541,10 @@
         .portfolio__one-box {
             width: 100%;
         }
+    }
+    .blog__one-title {
+        font-size: 28px;
+        line-height: 32px;
     }
 }
 
@@ -605,6 +667,11 @@
             margin-bottom: 30px;
         }
     }
+    .blog__one-comment--inner {
+        .reply-comment {
+            margin-left: 30px;
+        }
+    }
 }
 
 @media (max-width: 450px) {
@@ -647,6 +714,21 @@
             max-width: 100%;
             width: 100%;
             margin-top: 15px;
+        }
+    }
+    .blog-section__inner {
+        margin-left: 0;
+    }
+    .blog-section__item {
+        flex-basis: calc(100%);
+        margin-left: 0;
+    }
+    .blog__one-comment--inner {
+        .blog__one-comment--item {
+            display: block;
+            .blog__one-comment--avatar {
+                margin-bottom: 15px;
+            }
         }
     }
 }
